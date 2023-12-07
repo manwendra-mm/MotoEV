@@ -1,0 +1,108 @@
+/* 
+#0d0221
+#0f084b
+#26408b
+#a6cfd5
+#c2e7d9 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+.nav{
+    /* background-color: red; */
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#logo{
+    height: 2.5em;
+}
+
+#name{
+    height: 0.8em;
+    padding-left: 1em;
+}
+
+.options{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.options ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    list-style: none;
+}
+
+li{
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+    color: #0f084b;
+}
+
+.container{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+.container-left{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 50%;
+}
+
+.container-left h1{
+    font-size: 4.5em;
+    color: #0f084b;
+}
+.container-left p{
+    font-size: 1.3em;
+    padding-top: 3em;
+    color: #0f084b;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 0.7em 1em;
+    margin: 2em;
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1em;
+    background-color: #0f084b;
+    color: white;
+}
+
+
+.right img{
+    height: 35rem;
+}
+
