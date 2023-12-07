@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #bcebe3;
+    display: flex;
+}
+.right{
+    /* display: flex; */
+    width: 50%;
+    height: 100%;
+    /* background-color: royalblue; */
+}
+.right>img{
+    width: 28rem;
+    position: relative;
+    top: 15%;
+    
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(197, 122, 122); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form p{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: rgb(88, 87, 87);
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: .9em;
+}
+form input{
+    margin-bottom: 2rem;
+    width: 28em;
+    height: 2.4em;
+    padding: 1em;
+    border-radius: 1rem;
+    border: none;
+    color: grey;
+}
+form input:focus{
+    outline: none;
+}
+form button{
+    width: 10rem;
+    margin-left: 7rem;
+    height: 3em;
+    border-radius: 2em;
+    border: none;
+    /* background-color: rgb(99, 106, 206);  */
+}
+form button:hover{
+    background-color: rgb(211, 208, 208);
+}
+.input{
+    width: 30%;
+}
+.card{
+    width: 60%;
+    height: 76%;
+    /* background-color: #001427; */
+    border-radius: 1em;
+    border: 5px dotted rgba(141, 138, 138, 0.37);
+    padding: 1em;
+}
+.card h1{
+    font-size: 3em;
+    margin-bottom: 2em;
+    margin-left: 2.5em;
+    color: rgb(54, 53, 53);
+}
+.shortcut{
+    font-size: 1.7em;
+    margin: .5em 0 0 5.3em ;
+}
+.shortcut i:hover{
+    transform: translateY(-2px);
+    transition: .4s ease-in-out;
+}
+.card>a{
+    margin-left: 6rem;
+    font-size: .75em;
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+}
