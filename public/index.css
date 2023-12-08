@@ -15,8 +15,13 @@
     font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
+#background{
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+
 .nav{
-    /* background-color: red; */
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -64,25 +69,24 @@ a{
 }
 
 .container{
-    /* background-color: blue; */
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 3rem;
 }
 
 .container-left{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
-    width: 50%;
+    gap: 3rem;
 }
 
 .container-left h1{
-    font-size: 4.5em;
+    font-size: 4.2em;
     color: #0f084b;
 }
 .container-left p{
     font-size: 1.3em;
-    padding-top: 3em;
     color: #0f084b;
 }
 
@@ -91,18 +95,82 @@ a{
     justify-content: center;
 }
 
-button{
+#start{
     padding: 0.7em 1em;
-    margin: 2em;
+    margin: 5px;
     border: none;
     border-radius: 1.5em;
-    font-size: 1em;
+    font-size: 1.3em;
     background-color: #0f084b;
     color: white;
 }
 
-
-.right img{
-    height: 35rem;
+#start:hover{
+    border: 2px solid #0f084b;
+    background-color: white;
+    color: #0f084b;
+    cursor: pointer;
 }
 
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.right img{
+    width: 43vw;
+}
+
+#image{
+    height: 2.5rem;
+}
+
+/* for dropdown hamburger */
+.image-container {
+    display: none;
+}
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+/* Responsive */
+@media (width<600px){
+    .options{
+        display: none;
+    }
+    .image-container {
+        display: inline-block;
+        position: relative;
+        margin: auto 0;
+        right: 1rem; 
+    }
+}
+
+@media(width<900px){
+    .right{
+        display: none;
+    }
+    #background{
+        display: none;
+    }
+}

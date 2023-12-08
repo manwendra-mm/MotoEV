@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <img src="/src/background.jpg" alt="" id="background">
     <div class="nav">
         <div class="left">
             <img src="/src/Symbol_only.png" id="logo" alt="">
@@ -23,18 +24,30 @@
                 <li><a href="#">Register</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Contact Us</a></li>
-            </ul>
+            </ul>            
         </div>
+        
+        <div class="image-container">
+            <img src="/src/hamburger.png" alt="Sample Image" id="image">
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="#">Home</a>
+              <a href="#">Register</a>
+              <a href="#">Login</a>
+              <a href="#">Contact Us</a>
+            </div>
+        </div>
+          
+
     </div>
 
     <div class="container">
 
         <div class="container-left">
-            <h1>Platform for your <br>Electronic Vehicle</h1>
+            <h1>Platform for your Electronic Vehicle</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Repellendus repellat totam dolor excepturi iusto ipsam. <br> Fuga neque excepturi nam!</p>
             
             <div class="btn">
-                <button>Get Started!</button>
+                <button id="start">Get Started!</button>
             </div>
         </div>
         <div class="right">
@@ -43,7 +56,7 @@
         </div>
     </div>
 
-    
+    <script src="/js/index.js"></script>
 </body>
     
     
