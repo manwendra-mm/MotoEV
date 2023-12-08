@@ -1,3 +1,5 @@
 node_modules
 fire.js
 *.json
+*.c
+*.exe
