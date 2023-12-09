@@ -30,6 +30,7 @@ html, body{
     width: 28rem;
     position: relative;
     top: 15%;
+    left: 15%;
     
 }
 
@@ -45,6 +46,7 @@ html, body{
 form{
     display: flex;
     flex-direction: column;
+    /* background-color: red; */
 }
 form p{
     font-size: 1em;
@@ -56,7 +58,7 @@ form p{
 }
 form input{
     margin-bottom: 1.2rem;
-    width: 28em;
+    width: 20em;
     height: 2.4em;
     padding: 1em;
     border-radius: 1rem;
@@ -69,7 +71,7 @@ form input:focus{
 }
 form button{
     width: 10rem;
-    margin-left: 7rem;
+    margin-left: 12rem;
     height: 3em;
     border-radius: 2em;
     border: none;
@@ -82,30 +84,32 @@ form button:hover{
     width: 30%;
 } */
 .card{
-    width: 60%;
+    width: 100%;
     height: 76%;
     /* background-color: #001427; */
     border-radius: 1em;
     border: 5px dotted rgba(141, 138, 138, 0.37);
     padding: 1em;
+    margin-left: 4rem;
 }
 .card h1{
     font-size: 3em;
     margin-bottom: 1.5em;
-    margin-left: 2.1em;
+    margin-left: 4em;
     color: #0F084B;
 }
 .shortcut{
     font-size: 1.7em;
-    margin: .5em 0 0 5.3em ;
+    margin: .5em 0 0 8.2em ;
 }
 .shortcut i:hover{
     transform: translateY(-2px);
     transition: .4s ease-in-out;
 }
 .card>a{
-    margin-left: 6rem;
+    margin-left: 11rem;
     font-size: .75em;
     text-decoration: none;
     color: rgb(53, 53, 53);
 }
+.info {display: flex; gap: 10px;}

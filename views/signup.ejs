@@ -13,13 +13,37 @@
         <div class="left">
             <div class="card">
                 <h1>Sign Up</h1>
-                <form action="" id="user_data">
-                    <p>Username </p>
-                    <input type="text" placeholder="Username" name="username"> 
-                    <p>Email </p>
-                    <input type="email" placeholder="Email" name="email"> 
-                    <p>Password</p>
-                    <input type="Password" placeholder="Password" name="password">
+                <form action="/signup" id="user_data" method="post">
+                    <div class="info">
+                        <div class="name">
+                            <p>Fullname </p>
+                            <input type="text" placeholder="Fullname" name="fullname">
+                        </div>
+                        <div class="username">
+                            <p>Username </p>
+                            <input type="text" placeholder="Username" name="username"> 
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="email">
+                            <p>Email </p>
+                            <input type="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="password">
+                            <p>Password</p>
+                            <input type="Password" placeholder="Password" name="password"> 
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="carmodel">
+                            <p>Car Model</p>
+                            <input type="text" placeholder="Car Model" name="carmodel">
+                        </div>
+                        <div class="phone">
+                            <p>Phone</p>
+                            <input type="tel" placeholder="Phone No" name="phone">
+                        </div>
+                    </div>
                     <button type="submit">Sign Up →</button>
                 </form>
                 <div class="shortcut">
