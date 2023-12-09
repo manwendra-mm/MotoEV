@@ -37,6 +37,7 @@ html, body{
 }
 .li i{
     font-size: 1.8rem;
+    color: black;
 }
 .car-card{
     width: 55%;

@@ -20,7 +20,7 @@
             <p>Monitoring / All Routes / Car Profile</p>
             <div class="li">
                 <i class='bx bxs-bell'></i>
-                <i class='bx bxs-user-circle' ></i>
+                <a href="/"><i class='bx bxs-home' ></i></a>
             </div>
         </div>
     </div>
@@ -41,13 +41,13 @@
     <div class="profile-card">
         <div class="user">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mTMx8AB1-L0wAAhgsJj_zpHLvjMA3Y3bHQ" alt="">
-            <p>Owner</p>
+            <p><%= user1.fullname %></p>
         </div>
         <hr>
         <div class="info">
-            <p>Phone: 65619846</p>
-            <p>Model: XUV 700</p>
-            <p>Make:77778885555</p>
+            <p>Phone: <%= user1.phone %></p>
+            <p>Model: <%= user1.carmodel %></p>
+            <p>DL no: 77778885555</p>
         </div>
     </div>
 </body>

@@ -109,3 +109,12 @@ form button:hover{
     text-decoration: none;
     color: rgb(53, 53, 53);
 }
+
+.error{
+    font-size: 15px;
+    color: rgb(223, 4, 4);
+    margin-left: 8rem;
+    /* margin-bottom: 20px; */
+    position: relative;
+    bottom: 15%;
+  }

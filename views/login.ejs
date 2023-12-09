@@ -13,9 +13,12 @@
         <div class="left">
             <div class="card">
                 <h1>Log In</h1>
-                <form action="">
-                    <p>Email </p>
-                    <input type="email" placeholder="email" name="email"> 
+                <% if(error.length > 0 ){ %>
+                    <p class="error"><%= error %></p>
+                <% } %>
+                <form action="/login" method="post">
+                    <p>Username </p>
+                    <input type="text" placeholder="email" name="username"> 
                     <p>Password</p>
                     <input type="Password" placeholder="password" name="password">
                     <button>Login →</button>
