@@ -107,3 +107,14 @@ hr{
     font-size: 1.2rem;
     line-height: .5rem;
 }
+
+
+.slot{
+    position: relative;
+    bottom: 173%;
+    left: 75%;
+    width: 20%;
+    height: 60%;
+    background-color: peru;
+    border-radius: 1rem;
+}

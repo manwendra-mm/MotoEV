@@ -106,10 +106,50 @@ app.post("/signup", (req,res)=>{
         phone: phone,
         carmodel: carmodel,
     })
+
+    const getUserList = async ()=>{
+        try{
+            let users = await userModel.find()
+            let len = users.length
+            
+            await userModel.updateMany({serialNumer: { $gt: 0 , $lte: len/4 }}, { $set: { slot: '1' } })
+            await userModel.updateMany({serialNumer: { $gt: len/4 , $lte: len/2 }}, { $set: { slot: '2' } })
+            await userModel.updateMany({serialNumer: { $gt: len/2 , $lte: len*3/4 }}, { $set: { slot: '3' } })
+            await userModel.updateMany({serialNumer: { $gt: len*3/4 , $lte: len }}, { $set: { slot: '4' } })
+            // const updatedUser = await userModel.find()
+        //    console.log(updatedUser)
+        }catch(e){
+            throw new Error(e);
+        }
+    }
+    
+    
     userModel.register(userData, req.body.password)
     .then(function (){
         passport.authenticate("local")(req, res, function(){
             res.redirect("/login")
+
+
+            // Fetch all documents
+            userModel.find({})
+            .then(users => {
+                // Iterate through each document and update the serial number
+                users.forEach((user, index) => {
+                    user.serialNumer = index + 1; // Setting serial number
+                    user.save() // Save the updated document
+                        .then(() => {
+                            // console.log(`Updated serial number for ${user.fullname}`);
+                            // console.log(user.serialNumer)
+                            getUserList();
+                        })
+                        .catch(error => {
+                            console.error('Error updating serial number:', error);
+                        });
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching documents:', error);
+            }); 
         })
     })
 })

@@ -44,6 +44,12 @@ const userSchema = new mongoose.Schema({
     carmodel: {
         type: String,
         required: true
+    },
+    slot:{
+        type: String,
+    },
+    serialNumer:{
+        type: Number
     }
 });
 userSchema.plugin(plm);
