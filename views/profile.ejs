@@ -52,18 +52,20 @@
     </div>
     <div class="slot">
         <h1>Your Slot</h1>
-        <% if(slot=='1') { %>
-            <h3>slot 1</h3>
-        <%}%>
-        <% else if(slot=='2') { %>
-            <h3>slot 2</h3>
-        <%}%>
-        <% else if(slot==='3') { %>
-            <h3>slot 3</h3>
-        <%}%>
-        <% else if(slot==='4') { %>
-            <h3>slot 4</h3>
-        <%}%>
+        <div class="sl">
+            <% if (user1.slot === '1') { %>
+                <h3>12:00 AM - 6 AM</h3>
+            <% } else if (user1.slot === '2') { %>
+                <h3>6:00 AM - 12 PM</h3>
+            <% } else if (user1.slot === '3') { %>
+                <h3>12:00 PM - 6:00 PM</h3>
+            <% } else if (user1.slot === '4') { %>
+                <h3>6:00 PM - 12:00 AM</h3>
+            <% } %>
+        </div>
+        <div class="battery">
+            <img src="/src/icons8-charging-battery.gif" autoplay loop muted></img>
+        </div>
     </div>
 </body>
 </html>

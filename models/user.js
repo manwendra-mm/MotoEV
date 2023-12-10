@@ -50,6 +50,9 @@ const userSchema = new mongoose.Schema({
     },
     serialNumer:{
         type: Number
+    },
+    slot:{
+        type: String
     }
 });
 userSchema.plugin(plm);

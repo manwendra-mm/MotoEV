@@ -40,7 +40,7 @@ html, body{
     color: black;
 }
 .car-card{
-    width: 55%;
+    width: 47%;
     height: 60%;
     background-color: rgba(236, 233, 233, 0.411);
     border-radius: 2rem;
@@ -55,7 +55,7 @@ html, body{
     width: 7.8rem;
 }
 .car img{
-    width: 35rem;
+    width: 30rem;
 }
 .progress{
     display: flex;
@@ -64,12 +64,12 @@ html, body{
 }
 
 .profile-card{
-    width: 55%;
+    width: 47%;
     height: 24%;
     background-color: rgba(224, 224, 224, 0.452);
     border-radius: 1rem;
     position: relative;
-    top: -85%;
+    top: -87%;
     left: 19%;
     display: flex;
     justify-content: space-evenly;
@@ -115,6 +115,29 @@ hr{
     left: 75%;
     width: 20%;
     height: 60%;
-    background-color: peru;
+    background-color: rgba(226, 223, 223, 0.479);
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    gap: 1rem;
+}
+.slot h1{
+    color: #0F084B;
+}
+.sl{
+    width: 90%;
+    /* height: 15%; */
+    background-color: rgba(146, 145, 145, 0.37);
+    padding: 1rem 0 1rem 2rem;
+    border-radius: 1rem;
+}
+.sl h3{
+    color: #0F084B;
+}
+
+.battery img{
+    width: 80px;
 }
