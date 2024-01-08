@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <img src="/src/background.jpg" alt="" id="background">
+
     <div class="main">
         <div class="left">
             <div class="card">
@@ -18,17 +18,17 @@
                 <% } %>
                 <form action="/login" method="post">
                     <p>Username </p>
-                    <input type="text" placeholder="email" name="username"> 
+                    <input type="text" placeholder="Username" name="username"> 
                     <p>Password</p>
-                    <input type="Password" placeholder="password" name="password">
-                    <button>Login →</button>
+                    <input type="Password" placeholder="Password" name="password">
+                    <button>Login</button>
                 </form>
                 <div class="shortcut">
                     <i class='bx bxl-google' style='color:black'  ></i>
                     <i class='bx bxl-facebook-circle' style='color:black' ></i>
                     <i class='bx bxl-instagram-alt' style='color:black' ></i>
                 </div>
-                <a href="/signup">Don't have a account yet ? Sign Up</a>
+                <p>Don't have a account yet ? <a style="text-decoration: none;" href="/signup">Sign Up</a></p>
             </div>
         </div>
         <div class="right">

@@ -1,42 +1,56 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html, body{
+/* html, body{
     width: 100%;
     height: 100%;
+} */
+body{
+    background-image: url(./src/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#background{
+/* #background{
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: -1;
-}
+} */
 .main{
     width: 100%;
-    height: 100%;
-    background-color: #bcebe33b;
+    height: 100vh;
+    /* background-color: #bcebe33b; */
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
-.right{
-    /* display: flex; */
+/* .right{
+    display: flex;
     width: 50%;
     height: 100%;
-    /* background-color: royalblue; */
-}
+    background-color: royalblue;
+} */
 .right>img{
-    width: 28rem;
-    position: relative;
-    top: 15%;
-    left: 15%;
+    width: 40vw;
+    /* position: relative; */
+    /* top: 15%; */
+    /* left: 15%; */
     
 }
 
 .left{
-    width: 50%;
-    height: 100%;
+    /* width: 50%; */
+    /* height: 100%; */
     /* background-color: rgb(197, 122, 122); */
     display: flex;
     align-items: center;
@@ -58,7 +72,7 @@ form p{
 }
 form input{
     margin-bottom: 1.2rem;
-    width: 20em;
+    width: 15em;
     height: 2.4em;
     padding: 1em;
     border-radius: 1rem;
@@ -71,7 +85,7 @@ form input:focus{
 }
 form button{
     width: 10rem;
-    margin-left: 12rem;
+    margin: 1rem auto;
     height: 3em;
     border-radius: 2em;
     border: none;
@@ -84,32 +98,55 @@ form button:hover{
     width: 30%;
 } */
 .card{
-    width: 100%;
-    height: 76%;
+    /* width: 100%; */
+    /* height: 76%; */
     /* background-color: #001427; */
-    border-radius: 1em;
-    border: 5px dotted rgba(141, 138, 138, 0.37);
+    /* border-radius: 1em; */
+    /* border: 5px dotted rgba(141, 138, 138, 0.37); */
     padding: 1em;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .card h1{
     font-size: 3em;
-    margin-bottom: 1.5em;
-    margin-left: 4em;
+    margin-bottom: 0.7em;
+    /* margin-left: 4em; */
     color: #0F084B;
 }
 .shortcut{
     font-size: 1.7em;
-    margin: .5em 0 0 8.2em ;
+    /* margin: .5em 0 0 8.2em ; */
 }
 .shortcut i:hover{
     transform: translateY(-2px);
     transition: .4s ease-in-out;
 }
-.card>a{
-    margin-left: 11rem;
+.card>p, card>p>a{
+    /* margin-left: 11rem; */
     font-size: .75em;
     text-decoration: none;
     color: rgb(53, 53, 53);
 }
-.info {display: flex; gap: 10px;}
+.info {display: flex; gap: 1rem;}
+
+/* Responsive */
+
+@media(width<1000px){
+    .right{
+        display: none;
+    }
+}
+
+@media(width<450px){
+    .info{
+        display: inline;
+        /* gap: 0; */
+    }
+    .main{
+        margin-top: 3rem;
+    }
+}
+
