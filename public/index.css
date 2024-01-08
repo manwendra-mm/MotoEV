@@ -164,6 +164,9 @@ a{
         margin: auto 0;
         right: 1rem; 
     }
+    .container-left{
+        font-size: 0.8em;
+    }
 }
 
 @media(width<900px){
