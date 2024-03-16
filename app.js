@@ -73,6 +73,8 @@ app.get("/signup", (req, res)=>{
     res.render("signup.ejs")
 })
 
+
+
 app.get("/profile", isLoggedIn , async (req, res) => {
     const user1 = await userModel.findOne({
         username: req.session.passport.user   // req.session.passport.user stores all the  info about the logged in user
@@ -82,6 +84,18 @@ app.get("/profile", isLoggedIn , async (req, res) => {
     res.render("profile", {user1});
 });
 
+app.get("/user",  isLoggedIn , async (req, res) => {
+    const user1 = await userModel.findOne({
+        username: req.session.passport.user   // req.session.passport.user stores all the  info about the logged in user
+    })
+    console.log(user1)
+    // .populate("posts")  //To give details about post posted by an user 
+    res.render("user", {user1});
+});
+
+app.get("/change", (req,res)=>{
+    res.send("chaning time slot")
+})
 
 app.get('/logout', function(req, res, ){
     req.logout(function(err) {
