@@ -130,14 +130,30 @@ hr{
 .sl{
     width: 90%;
     /* height: 15%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sl h3{
     background-color: rgba(146, 145, 145, 0.37);
     padding: 1rem 0 1rem 2rem;
     border-radius: 1rem;
-}
-.sl h3{
     color: #0F084B;
 }
 
 .battery img{
     width: 80px;
+}
+.btn{
+    width: 60%;
+    font-size: .9em;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid navy;
+    background-color: #0F084B;
+    color: white;
+}
+form{
+    width: 100%;
+    margin-left: 7rem;
 }

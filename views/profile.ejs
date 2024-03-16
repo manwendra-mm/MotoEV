@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/white_logo.png" >
     <title>MotoEV - Profile</title>
     <link rel="stylesheet" href="/profile.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,8 +20,9 @@
         <div class="upnav">
             <p>Monitoring / All Routes / Car Profile</p>
             <div class="li">
-                <i class='bx bxs-bell'></i>
                 <a href="/"><i class='bx bxs-home' ></i></a>
+                <i class='bx bxs-bell'></i>
+                <a href="/user"><i class='bx bxs-user-circle'></i></i></a>
             </div>
         </div>
     </div>
@@ -54,18 +56,26 @@
         <h1>Your Slot</h1>
         <div class="sl">
             <% if (user1.slot === '1') { %>
-                <h3>12:00 AM - 6 AM</h3>
+                <h3>12:00 AM - 6:00 AM</h3>
+                <h3>12:00 PM - 6:00 PM</h3>
             <% } else if (user1.slot === '2') { %>
-                <h3>6:00 AM - 12 PM</h3>
+                <h3>6:00 AM - 12:00 PM</h3>
+                <h3>6:00 PM - 12:00 AM</h3>
             <% } else if (user1.slot === '3') { %>
                 <h3>12:00 PM - 6:00 PM</h3>
+                <h3>12:00 AM - 6:00 AM</h3>
             <% } else if (user1.slot === '4') { %>
                 <h3>6:00 PM - 12:00 AM</h3>
+                <h3>6:00 AM - 12:00 PM</h3>
             <% } %>
         </div>
-        <div class="battery">
+        <!-- <div class="battery">
             <img src="/src/icons8-charging-battery.gif" autoplay loop muted></img>
-        </div>
+        </div> -->
+        <form action="/change">
+            <button class="btn">Manage Time Slots</button>
+        </form>
+        
     </div>
 </body>
 </html>
